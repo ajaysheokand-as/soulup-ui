@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    padding:0px 30px;
+    height: 70px;
+    border-bottom:1px solid black ;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:rgb(235, 238, 241);
+}
+
+.nav-heading{
+    font-size: 45px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.up-heading{
+    color:#f4d352 ;
+}
+
+.nav-items{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    /* padding: 10px; */
+    /* width: 150px; */
+    font-size: 17px;
+    font-weight: 900;
+    cursor: default;
+    display: flex;
+    position: relative;
+}
+
+.mouse-pointer{
+    cursor: pointer;
+}
+
+.down-arrow{
+    padding: 5px;
+    position:relative;
+    left: 5px;
+}
+
+.dropdown-hidden{
+    display: none;
+}
+.dropdown-show{
+    display: inline-block;
+    width: 200px;
+    font-weight: 100;
+    font-size: 14px;
+    background-color: white;
+    z-index: 5;
+    border-radius: 5px;
+    box-shadow: 1px 1px;
+    position: absolute;
+    left: -30px;
+    top :25px;
+    cursor:default;
+}
+
+.dropdown-item{
+    /* height: fit-content; */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: relative;
+}
+
+.dropdown-item:hover{
+    background-color: #F6F6CE;
+}
+
+.d-item-1{
+    position: relative;
+}
+
+.d-sub-drop{
+    z-index: 2;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px;
+    width:100%;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    background-color: rgb(244, 244, 244);
+}
+.exception-item{
+    /* margin: -10px; */
+    font-size: 14px;
+    display: flex;
+}
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    /* line-height: 100%; */
+    background-color: #f4d352;
+}
+
+.peer-1000-btn{
+    background-color: rgb(68, 197, 248);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+}
