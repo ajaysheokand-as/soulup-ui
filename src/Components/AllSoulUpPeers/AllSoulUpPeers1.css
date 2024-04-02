@@ -1,0 +1,14 @@
+.container{
+    padding: 27px;
+    padding-bottom: 27px;
+    position: relative;
+}
+.Heading{
+    margin-top: 0;
+    word-break: break-word;
+    margin-bottom: 0;
+    color:#fff;
+    background-color: aqua;
+
+
+}
