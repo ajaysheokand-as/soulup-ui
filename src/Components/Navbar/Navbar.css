@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 .navbar{
+    display: none;
     padding:0px 30px;
     height: 70px;
     border-bottom:1px solid black ;
-    display: flex;
     justify-content: space-between;
     align-items:center;
     background-color:rgb(235, 238, 241);
+    @media screen and (min-width:769px) {
+        display: flex;
+    }
 }
 
 .nav-heading{
@@ -29,6 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-item{
