@@ -9,17 +9,55 @@
 {
     display: flex;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 2rem;
 
+}
+
+@media screen  and (max-width : 475px){
+    .sub-container-1
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-1
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: flex-start;
+    }
+
+    .second-2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-container-2
+    {
+
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 .first-1
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: flex-start;
+    width: 42%;
     gap: none;
-    width: 33%;
+    /* width: 33%; */
     padding-right:5rem ;
 
 }
@@ -37,9 +75,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center ;
+    align-items: flex-start ;
     gap: none;
-    width: 33%;
+    /* width: 33%; */
     padding-right:5rem ;
     cursor: pointer;
 
@@ -52,7 +90,7 @@
     justify-content: center ;
     flex-direction: column;
     gap: none;
-    width: 33%;
+    /* width: 33%; */
     padding-right:2rem ;
 
 }
@@ -63,7 +101,8 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: center ;
     gap: .8rem  ;
     font-size: 18px;
 
@@ -83,8 +122,6 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     gap: .8rem  ;
     font-size: 18px;
     
