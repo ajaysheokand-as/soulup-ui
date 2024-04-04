@@ -1,11 +1,11 @@
-.container
+.footer-container
 {
     display: flex;
     flex-direction: column;
     background-color: black;
     color: rgb(210, 208, 208);
 }
-.sub-container-1
+.footer-sub-container-1
 {
     display: flex;
     align-items: baseline;
@@ -15,7 +15,7 @@
 }
 
 @media screen  and (max-width : 475px){
-    .sub-container-1
+    .footer-sub-container-1
     {
         display: flex;
         flex-direction: column;
@@ -39,7 +39,7 @@
         justify-content: center;
         align-items: center;
     }
-    .sub-container-2
+    .footer-sub-container-2
     {
 
         display: flex;
@@ -135,11 +135,11 @@
     padding: .9rem;
 }
 
-.sub-container-2  img{
+.footer-sub-container-2  img{
     width: 5rem;
 }
 
-.sub-container-2 select{
+.footer-sub-container-2 select{
     width: 2rem;
     height: 2rem;
 }

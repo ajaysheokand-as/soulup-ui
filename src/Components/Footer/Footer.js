@@ -5,8 +5,8 @@ import Logo from '../../Assests/whatsapp-logo.jpg'
 
 const Footer = () => {
   return (
-    <div className='container'>
-        <div className='sub-container-1'>
+    <div className='footer-container'>
+        <div className='footer-sub-container-1'>
             <div className='first-1'>
                 <h1>Soul<span>Up</span></h1>
                 <p><b>Powered by</b>:Auriga Connect Pvt. Ltd, WeWork Galaxy, 43 Residency Rd, Bengaluru, KA - 560025 | Whatsapp:  +91 6374 897 533</p>
@@ -36,7 +36,7 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
-        <div className='sub-container-2'>
+        <div className='footer-sub-container-2'>
             <select name="currency" id="curr">
                {
                 currency.map((id , currency) => {
