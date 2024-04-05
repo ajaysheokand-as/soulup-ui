@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import Header from "./Components/Header/Header";
 import MobileNavbar from "./Components/Navbar/MobileNavbar";
 import Navbar from "./Components/Navbar/Navbar";
@@ -7,11 +7,15 @@ import ConnectRelavant from "./Components/ConnectRelavant/ConnectRelavant";
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import Peerinfo from "./Components/Peerinfo/Peerinfo";
 function App() {
+<<<<<<< HEAD
   const [data,setData]=useState({});
   const data_from_child=(item)=>
   { 
     setData({...item});
   }
+=======
+
+>>>>>>> 0dede55a0bb6de38f1565957b8c23cfb856ee547
   return (
     <div className="App">
       <Router>

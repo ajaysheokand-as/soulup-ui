@@ -1,13 +1,21 @@
-.header-outer {
+
+  
+  .header-outer {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    z-index: 2;
-    background-color:rgba(22, 8, 35, 0.244);
+    flex-wrap: wrap;
+    @media screen and (max-width:320px) {
+    flex-wrap: wrap;
+    }
+    @media screen and (min-width:321px) and (max-width:425px) {
+      flex-wrap: wrap;
+    }
   }
   .heading2 {
-    padding-left: 70px;
+    padding-top: 50px;
+    padding-left: 120px;
     font-size: 60px;
     text-align: left;
     font-family: Inter;
@@ -16,27 +24,28 @@
     text-transform: inherit;
     color: #0c090d;
   }
+
   
   .paragraph {
-    
     color: #2a3c4d;
     margin-top: 60px;
-    margin-left: 70px;
+    margin-left:120px;
     font-size: 25px;
     line-break: 150%;
     text-align: left;
     text-transform: inherit;
     color: #0c090d;
     opacity: .6;
+    
   }
   
   .button-peer {
     margin-top: 40px;
-    margin-left: 70px;
+    margin-left: 120px;
     margin-bottom: 20px;
-    width: 200px;
+    width: 320px;
     height: 50px;
-    border-radius: 1000px;
+    border-radius: 30px;
     background: linear-gradient(320.03deg,#f4d251 6.34% ,#ffeba0 93.17%);
     border-color: 0px solid #ff000000 !important;
     border: none;
@@ -44,8 +53,8 @@
   }
   
   .button-Support{
-    margin-left:40px;
-    width: 200px;
+    margin-left:120px;
+    width:320px;
     height: 50px;
     border-radius: 40px;
     
@@ -55,12 +64,22 @@
     vertical-align: middle;
     font-size: 14px;
     line-height: 17px;
+    gap: 20px;
 
   }
-  .home-img {
-    width: 550px;
+  .home-img   { 
+    @media screen and (max-width:320px) {
+    width: 400px;
     height: 490px;
     margin-left: 30px;
-     margin-left: 40px;
-    z-index: -1;
-  }
+     margin-top: 20px;
+    }
+     @media screen and (min-width:321px) and (max-width:425px) {
+      width: 420px;
+      height: 490px;
+      margin-left: 30px;
+       margin-top: 20px;
+    }
+  
+  
+}
