@@ -1,0 +1,20 @@
+.peerinfo-img{
+    height: 30rem;
+    width: 30rem;
+    position: sticky;
+    top: 0;
+    @media screen and (max-width:992px)
+    {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.peerinfo-title{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.peer-btn{
+    cursor: pointer;
+}

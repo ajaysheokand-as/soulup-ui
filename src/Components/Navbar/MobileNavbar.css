@@ -12,6 +12,8 @@
 }
 
 .m-navbar{
+    width: 100vw;
+    z-index: 4;
     display: none;
     position: relative;
     padding:0px 30px;
@@ -38,21 +40,15 @@
     display: inline-block;
     padding: 50px 30px;
     width: 90%;
-    /* height: 100vh; */
     background-color: aliceblue;
     position: absolute;
     top: 70px;
     left: 0px;
-    
 }
 .sidebar-item{
-    /* height: fit-content; */
-    
-   
     width: 100%;
     padding: 15px 8px;
     font-size: 20px;
-    /* position: relative  ; */
     cursor: default;
 }
 
