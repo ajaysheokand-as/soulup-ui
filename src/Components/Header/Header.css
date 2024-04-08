@@ -1,10 +1,11 @@
 
   
   .header-outer {
+    /* margin: 0px 70px; */
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
     flex-wrap: wrap;
     @media screen and (max-width:320px) {
     flex-wrap: wrap;
@@ -70,8 +71,8 @@
   .home-img   { 
     margin-top: 20px;
     background-image: url('../../Assests/Header-image.png');
-    height:300px ;
-    width: 400px;
+    height:300px;
+    width: 320px;
     background-size: contain;
     background-repeat: no-repeat;
     @media screen and (max-width:320px) {

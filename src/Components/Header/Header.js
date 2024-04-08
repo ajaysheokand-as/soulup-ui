@@ -3,7 +3,7 @@ import "./Header.css";
 import headerimg from "../../Assests/Header-image.png";
 const Header = () => {
   return (
-    <div className="header-outer">
+    <div className="header-outer mx-lg-5">
       <div>
         <div className="heading2">
           <h2>We are changing <br></br>how you solve <br></br>life's problems</h2>
@@ -16,7 +16,7 @@ const Header = () => {
         <button className="button-Support"> Join a Support Group </button>
       </div>
 
-      <div className="home-img">
+      <div className="home-img ">
         {/* <img src={headerimg} alt="Home image" className="home-img" /> */}
       </div>
     </div>

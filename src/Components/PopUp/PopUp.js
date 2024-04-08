@@ -5,7 +5,7 @@ const PopUp = () => {
 
     const[action,setAction] = useState("Log In");
   return (
-    <div className='Box'>
+    <div className='Boxpopup'>
         <div className=' H_3'>
             <div className='text'>{action}</div>
             <div className="underline"></div>
