@@ -3,8 +3,8 @@ import "./AllSoulUpPeers1.css";
 import Text from "../../Assests/Text-img.jpg";
 const AllSoulUpPeers1 = () => {
     return (
-        <div className="container">
-      <div className='content'>
+        <div className="containerone">
+      <div className='contentone'>
         <div className="Headingall">
           <h2>All Soul Peers</h2>
         </div>

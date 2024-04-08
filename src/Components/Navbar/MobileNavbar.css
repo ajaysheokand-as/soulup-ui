@@ -11,9 +11,14 @@
     display: inline-block;
 }
 
+.m-nav-outer{
+    position:sticky;
+    top: 0;
+    z-index: 4;
+}
 .m-navbar{
     width: 100vw;
-    z-index: 4;
+   
     display: none;
     position: relative;
     padding:0px 30px;

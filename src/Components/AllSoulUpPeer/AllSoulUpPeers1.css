@@ -1,4 +1,4 @@
-.container {
+.containerone {
   display: flex;
   margin-top: 30px;
   justify-content: center;
@@ -9,19 +9,19 @@
 }
 
 @media screen and (max-width: 320px) {
-  .container {
+  .containerone {
       flex-wrap: wrap-reverse;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 425px) {
-  .container {
+  .containerone{
       flex-wrap: wrap-reverse;
   }
 }
 
-.content {
-  margin-top: 50px;
+.contentone {
+  /* margin-top: 50px; */
   font-size: 40px;
   text-align: left;
   font-family: Inter;
@@ -48,7 +48,7 @@
 }
 
 .btn1 {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   margin-left: 10px;
   margin-bottom: 20px;
   width: 270px;

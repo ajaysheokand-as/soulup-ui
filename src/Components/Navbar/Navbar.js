@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './Navbar.css'
+import {useNavigate} from 'react-router-dom'
 function Navbar() {
+    const navigate=useNavigate();
     const [d,setD]=useState({
         d1:false,
         d2:false,
@@ -36,7 +38,7 @@ function Navbar() {
   return (
     <>  
         <div className='navbarup'>
-            <div className='nav-heading'>
+            <div className='nav-heading' onClick={()=>{navigate('/')}}>
                 Soul<span className='up-heading'>Up</span>
             </div>
             <div className='nav-itemsup'>
@@ -241,7 +243,7 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className='nav-itemup mouse-pointer'>
+                <div className='nav-itemup mouse-pointer' onClick={()=>{navigate('/applyaspeer')}}>
                     Apply as Peer
                 </div>
             </div>

@@ -2,20 +2,15 @@ import React from 'react'
 import AllSoulUpPeers1 from '../Components/AllSoulUpPeer/AllSoulUpPeers1'
 import AllSoulUpPeer2 from '../Components/AllSoulUpPeer/AllSoulUpPeer2'
 import AllSoulUpPeers3 from '../Components/AllSoulUpPeer/AllSoulUpPeers3'
-import { useState } from "react";
+import {Store} from '../Components/Redux/Store'
+import {Provider} from 'react-redux'
 function AllSoulUpPeer() {
-    const [data,setData]=useState({});
-    const data_from_child=(item)=>
-    { 
-      setData({...item});
-    }
-  
   return (
-    <div>
+    <Provider store={Store}>
       <AllSoulUpPeers1/>
-      <AllSoulUpPeer2/>
+      <AllSoulUpPeer2 />
       <AllSoulUpPeers3/>
-    </div>
+    </Provider>
   )
 }
 
