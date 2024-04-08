@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './MobileNavbar.css'
+import {useNavigate} from 'react-router-dom';
 function MobileNavbar() {
     const [sidebar,setSidebar]=useState(false);
+    const navigate=useNavigate();
     const go_sidebar=()=>{
         if(sidebar)
         {
@@ -69,7 +71,8 @@ function MobileNavbar() {
         setSs_subsidebar(prevState=>({...prevState,[key]:false}))
     }
   return (
-    <>
+    <div className=' m-nav-outer'>
+    
       <div className='m-navbar'>
             <div className='menu-icon' onClick={go_sidebar}>
                 <div className={sidebar ?'hide-icon' :'icon-show'}><i class="fa-solid fa-bars" ></i></div>
@@ -445,12 +448,12 @@ function MobileNavbar() {
                             </div>  
                         </div>
                     </div>
-                    <div className='sidebar-item'>
+                    <div className='sidebar-item' onClick={()=>{navigate('/applyaspeer')}}>
                         <div>Apply as Peer</div>
                     </div>
             </div>
       </div>
-    </>
+    </div>
   )
 }
 

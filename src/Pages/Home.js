@@ -1,11 +1,11 @@
 import React from 'react'
 import Header from '../Components/Header/Header'
-import AllSoulUpPeer from './AllSoulUpPeer'
+import AllSoulUpPeer2 from '../Components/AllSoulUpPeer/AllSoulUpPeer2'
 function Home() {
   return (
     <div>
       <Header/>
-      <AllSoulUpPeer/>
+      <AllSoulUpPeer2/>
       
     </div>
   )

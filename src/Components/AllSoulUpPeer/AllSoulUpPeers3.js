@@ -1,19 +1,20 @@
 import React from 'react'
-import { cardData } from '../../Data/Card';
 import  "./AllSoulUpPeer3.css";
+import {useSelector} from 'react-redux'
 const AllSoulUpPeer3 = () => {
+    const cData=useSelector(state=>state.peer3card)
   return (
     <div className='container1'>
         <div className='content1'>
-            <div className='Heading1'>
-                <h2>How Peer Converstions Help</h2>
+            <div className='row'>
+                <div className='col-12 text-center'><h2>How Peer Converstions Help</h2></div>
             </div>
       </div>
       <div className='box'>
       {
-        cardData.map((index)=>{
+        cData.map((index)=>{
             return(
-                <div className='H1' key={index.id}>
+                <div className='H1peer3' key={index.id}>
                     <h3>{index.title}</h3>
                     <div className='rte'>
                         <p>{index.text}
