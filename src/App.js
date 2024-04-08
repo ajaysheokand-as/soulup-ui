@@ -1,10 +1,11 @@
-import Header from "./Components/Header/Header";
-import MobileNavbar from "./Components/Navbar/MobileNavbar";
-import Navbar from "./Components/Navbar/Navbar";
-import Center from "./Components/Center/Center";
-import ConnectRelavant from "./Components/ConnectRelavant/ConnectRelavant";
-import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
-import Peerinfo from "./Components/Peerinfo/Peerinfo";
+// import Header from "./Components/Header/Header";
+// import MobileNavbar from "./Components/Navbar/MobileNavbar";
+// import Navbar from "./Components/Navbar/Navbar";
+// import Center from "./Components/Center/Center";
+// import ConnectRelavant from "./Components/ConnectRelavant/ConnectRelavant";
+// import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+// import Peerinfo from "./Components/Peerinfo/Peerinfo";
+import PopUp from "./Components/PopUp/PopUp";
 function App() {
 
   return (
@@ -13,15 +14,16 @@ function App() {
       <MobileNavbar/>
       <Header/>
       <AllSoulUpPeers1/>
+      
       <AllSoulUpPeer3/>
       <Center/> */}
-
-      <Router>
+<PopUp/>
+      {/* <Router>
         <Navbar/> 
         <MobileNavbar/>
         <Routes>
           
-          <Route
+          {/* <Route
             exact 
             path="/"
             element={<AllSoulUpPeer2 data_from_parent={data_from_child}/>}
@@ -30,10 +32,10 @@ function App() {
             exact 
             path="/peerinfo"
             element={<Peerinfo item={data}/>}
-          ></Route>
+          ></Route> }
         </Routes>
       </Router>
-      
+       */}
       
       
 
