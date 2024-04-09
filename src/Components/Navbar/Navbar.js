@@ -35,6 +35,13 @@ function Navbar() {
     const sub2Dhandler=(key,value)=>{
         setSub2d(prevState=>({...prevState,[key]:value}));
     }
+
+    const go_for_navigation=(e)=>{
+        console.log("e=>",e.target)
+        const id=e.target.id;
+        console.log("name=>",id );
+        navigate('/'+id);
+    }
   return (
     <>  
         <div className='navbarup'>
@@ -111,7 +118,7 @@ function Navbar() {
                     Peer Calls
                     <div className='down-arrow'><i class="fa-solid fa-angle-down"></i></div>
                     <div className={d.d2 ?'dropdown-show' :'dropdown-hidden'}>
-                        <div className='dropdown-itemup mouse-pointer'>
+                        <div className='dropdown-itemup mouse-pointer' id="all_soulup_peers"  onClick={(e)=>{go_for_navigation(e)}}>
                             <div>All SoulUp Peers</div>
                             {/* <div><i class="fa-solid fa-angle-right"></i></div> */}
                         </div>
