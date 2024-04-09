@@ -75,6 +75,11 @@ function RegistrationForm() {
                             <lavel className=' fs-lg-4 fw-lg-bold'>Photo: </lavel>
                             <input type='file'/>
                     </div>
+                    <div className='row mt-3'>
+                        <div className='col d-flex justify-content-center'>
+                        <button type="button" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
