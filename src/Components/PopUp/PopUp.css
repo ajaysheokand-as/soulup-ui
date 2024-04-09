@@ -1,0 +1,45 @@
+.popup-outr{
+    /* display: inline; */
+    position:fixed;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.popup{
+    border-radius: 15px;
+    box-shadow:10px 100px  100px gray;
+}
+
+.hidden{
+    display: none;
+}
+
+.ist-row{
+    position: relative;
+}
+
+.x-btn{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.float-btn{
+    z-index: 6;
+    padding: 20px;
+    width: 200px;
+    position:fixed;
+    top: 150px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    @media screen and (max-width:768px) {
+        right: 0px;
+        top:70px;
+        height: 140px;
+        width: 130px;
+    }
+
+}

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './Navbar.css'
+import {useNavigate} from 'react-router-dom'
 function Navbar() {
+    const navigate=useNavigate();
     const [d,setD]=useState({
         d1:false,
         d2:false,
@@ -33,10 +35,17 @@ function Navbar() {
     const sub2Dhandler=(key,value)=>{
         setSub2d(prevState=>({...prevState,[key]:value}));
     }
+
+    const go_for_navigation=(e)=>{
+        console.log("e=>",e.target)
+        const id=e.target.id;
+        console.log("name=>",id );
+        navigate('/'+id);
+    }
   return (
     <>  
         <div className='navbarup'>
-            <div className='nav-heading'>
+            <div className='nav-heading' onClick={()=>{navigate('/')}}>
                 Soul<span className='up-heading'>Up</span>
             </div>
             <div className='nav-itemsup'>
@@ -109,7 +118,7 @@ function Navbar() {
                     Peer Calls
                     <div className='down-arrow'><i class="fa-solid fa-angle-down"></i></div>
                     <div className={d.d2 ?'dropdown-show' :'dropdown-hidden'}>
-                        <div className='dropdown-itemup mouse-pointer'>
+                        <div className='dropdown-itemup mouse-pointer' id="all_soulup_peers"  onClick={(e)=>{go_for_navigation(e)}}>
                             <div>All SoulUp Peers</div>
                             {/* <div><i class="fa-solid fa-angle-right"></i></div> */}
                         </div>
@@ -241,7 +250,7 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className='nav-itemup mouse-pointer'>
+                <div className='nav-itemup mouse-pointer' onClick={()=>{navigate('/applyaspeer')}}>
                     Apply as Peer
                 </div>
             </div>
