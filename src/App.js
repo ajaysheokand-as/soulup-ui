@@ -14,9 +14,9 @@ function App() {
   return (
     <Provider store={Store}>
       <Router>
+      <PopUp/>
         <Navbar/> 
         <MobileNavbar/>
-        <PopUp/>
         <Routes>
            <Route
             exact 

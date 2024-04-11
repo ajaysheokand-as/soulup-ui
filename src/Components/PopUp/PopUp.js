@@ -34,21 +34,20 @@ const PopUp = () => {
         </div>
         <div className='row mt-3'>
           <div className='col-lg-12 m-2 d-flex justify-content-center'>
-            <input type='text' placeholder="Enter e-mail" className='fs-3 rounded-5 px-lg-5' style={{height:'4rem'}}/>
+            <input type='text' placeholder="Enter e-mail" className='outline-0 border-0 fs-lg-3 rounded-5 px-lg-5 popup-input p-2'/>
           </div>
         </div>
         <div className='row mt-3'>  
           <div className='12 m-2 d-flex justify-content-center'>
-            <input type='text' placeholder="Enter password" className='fs-3 rounded-5 px-lg-5' style={{height:'4rem'}}/>
+            <input type='text' placeholder="Enter password" className='fs-lg-3 border-0 rounded-5 px-lg-5 popup-input p-2'/>
           </div>
         </div>
-       
-      <div className='row d-flex justify-content-center flex-wrap mt-3 mb-4'>
+      <div className='row d-lg-flex justify-content-center flex-wrap mt-3 mb-4'>
         <div className='col-sm-3 m-3 d-flex justify-content-center'>
-          <button type="button" class="btn btn-outline-primary p-3 fs-4" onClick={()=>{setHeading("Sign Up")}}>Sign Up</button>
+          <button type="button" class="btn btn-outline-primary p-3 fs-lg-4" onClick={()=>{setHeading("Sign Up")}}>Sign Up</button>
         </div>
         <div className='col-sm-3  m-3 d-flex justify-content-center'>
-          <button type="button" class="btn btn-outline-primary p-3 fs-4" onClick={()=>{setHeading("Login")}}>Login</button>
+          <button type="button" class="btn btn-outline-primary p-3 fs-lg-4" onClick={()=>{setHeading("Login")}}>Login</button>
         </div>
       </div>  
       </div>
