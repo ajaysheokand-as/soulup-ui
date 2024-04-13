@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 const initialState = {
     passinfo:null,
+    formpopup:true,
     peer3card:[
         {
             title:"Learn from a Peer",
@@ -188,9 +189,13 @@ export const infoSlice=createSlice({
 
         setpasskey:(state,action)=>{
             state.passinfo=action.payload;
+        },
+
+        setformpopup:(state,action)=>{
+            state.formpopup=action.payload;
         }
     }
 })
 
-export const {addInfo ,setpasskey}=infoSlice.actions;
+export const {addInfo ,setpasskey,setformpopup}=infoSlice.actions;
 export default infoSlice.reducer;

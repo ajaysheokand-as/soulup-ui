@@ -1,10 +1,8 @@
 .popup-outr{
-    /* display: inline; */
     height: 100vh;
     width: 100vw;
     background-color: rgb(69, 65, 65,0.8);
     position:fixed;
-    /* top: 80px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,10 +28,27 @@
     right: 40px;
 }
 
-.float-btn{
+.float-btn-login{
     z-index: 6;
-    padding: 20px;
-    width: 200px;
+    padding: 10px;
+    width:fit-content;
+    position:fixed;
+    top: 220px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    @media screen and (max-width:768px) {
+        right: 0px;
+        top:70px;
+        height: 140px;
+        width: 130px;
+    }
+
+}
+
+.float-btn-signup{
+    z-index: 6;
+    padding: 10px;
+    width:fit-content;
     position:fixed;
     top: 150px;
     border-radius: 5px;
@@ -46,7 +61,6 @@
     }
 
 }
-
 .popup-input{
     outline: none;
     height: 50px;

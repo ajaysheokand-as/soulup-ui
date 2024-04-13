@@ -10,11 +10,13 @@ import {Provider} from 'react-redux'
 import {Store} from './Components/Redux/Store'
 import RegistrationForm from "./Components/RegistrationForm/RegistrationForm";
 import AllSoulUpPeer from "./Pages/AllSoulUpPeer"
+import SignUp_PopUp from "./Components/PopUp/SignUp_PopUp";
 function App() {
   return (
     <Provider store={Store}>
       <Router>
       <PopUp/>
+      <SignUp_PopUp/>
         <Navbar/> 
         <MobileNavbar/>
         <Routes>
@@ -38,6 +40,7 @@ function App() {
             path="/applyaspeer"
             element={<RegistrationForm/>}
           ></Route>
+
         </Routes>
       </Router>
       
